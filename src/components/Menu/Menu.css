@@ -1,0 +1,105 @@
+/* Menu.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --vue-green: #42b883;
+    --vue-dark: #34495e;
+    --menu-bg: #ffffff;
+    --border-color: #ebeef5;
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+  
+.menu-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+  
+.menu {
+    width: 250px;
+    background: var(--menu-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+}
+  
+.menu-header {
+    background: var(--vue-green);
+    padding: 12px 16px;
+    border-radius: 8px 8px 0 0;
+}
+  
+.menu-header h3 {
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+  
+  .menu-item {
+    position: relative;
+  }
+  
+  .menu-item-content {
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .menu-item-content:hover {
+    background-color: rgba(66, 184, 131, 0.08);
+  }
+  
+  .menu-item-focused {
+    background-color: rgba(66, 184, 131, 0.08);
+  }
+  
+  .menu-arrow {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  
+  .submenu {
+    margin-left: 16px;
+    border-left: 2px solid var(--border-color);
+  }
+  
+  .custom-submenu {
+    padding: 12px;
+    background: var(--menu-bg);
+    border-radius: 4px;
+    margin-top: 4px;
+  }
+  
+  .menu-btn {
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: white;
+    color: var(--vue-dark);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .menu-btn:hover {
+    background: var(--vue-green);
+    color: white;
+  }
+  
+  .menu-list,
+  .submenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }

@@ -1,0 +1,31 @@
+{
+    "mainMenu": {
+      "items": [
+        {
+          "key": "dashboard",
+          "label": "Dashboard",
+          "icon": "home"
+        },
+        {
+          "key": "settings",
+          "label": "Settings",
+          "children": [
+            {
+              "key": "profile",
+              "label": "Profile"
+            },
+            {
+              "key": "preferences",
+              "label": "Preferences"
+            }
+          ]
+        },
+        {
+          "key": "reports",
+          "label": "Reports",
+          "type": "custom",
+          "customSubmenu": "ReportsSubmenu"
+        }
+      ]
+    }
+  }
